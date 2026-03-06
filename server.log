@@ -1,0 +1,55 @@
+Serving HTTP on 0.0.0.0 port 12002 (http://0.0.0.0:12002/) ...
+172.18.0.2 - - [06/Mar/2026 05:07:23] "GET / HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:07:30] "GET / HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:07:34] "GET / HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:07:53] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:08:33] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/css/bulma-slider.min.css HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/css/bulma-carousel.min.css HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/css/bulma.min.css HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/css/index.css HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/css/fontawesome.all.min.css HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/js/bulma-slider.min.js HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/images/teaser.png HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/js/index.js HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/images/method.png HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:02] "GET /static/js/bulma-carousel.min.js HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/images/runtime_comparison.png HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/images/realworld-ood.png HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/images/main-results.png HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/js/fontawesome.all.min.js HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] code 404, message File not found
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] code 404, message File not found
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/webfonts/fa-brands-400.woff2 HTTP/1.1" 404 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/videos/AAAIDEMO.mp4 HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] code 404, message File not found
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/webfonts/fa-brands-400.ttf HTTP/1.1" 404 -
+172.18.0.2 - - [06/Mar/2026 05:09:03] code 404, message File not found
+172.18.0.2 - - [06/Mar/2026 05:09:03] "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 -
+172.18.0.2 - - [06/Mar/2026 05:09:04] code 404, message File not found
+172.18.0.2 - - [06/Mar/2026 05:09:04] "GET /favicon.ico HTTP/1.1" 404 -
+172.18.0.2 - - [06/Mar/2026 05:09:11] code 404, message File not found
+172.18.0.2 - - [06/Mar/2026 05:09:11] "GET /favicon.ico HTTP/1.1" 404 -
+172.18.0.2 - - [06/Mar/2026 05:09:14] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:09:56] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:10:46] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:14:51] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:16:15] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:17:45] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:19:21] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:21:11] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:23:11] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:25:21] "GET / HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:25:32] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:25:42] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:25:52] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:26:02] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:26:12] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:26:22] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:26:32] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:26:42] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:27:02] "GET / HTTP/1.1" 304 -
+172.18.0.2 - - [06/Mar/2026 05:27:22] "GET / HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:27:32] "GET / HTTP/1.1" 200 -
+172.18.0.2 - - [06/Mar/2026 05:27:43] "GET / HTTP/1.1" 304 -
