@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="GUIDES: Guidance Using Instructor-Distilled Embeddings for Pre-trained Robot Policy Enhancement">
+  <meta name="keywords" content="robotics, machine learning, vision-language models, robot policies">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GUIDES: Guidance Using Instructor-Distilled Embeddings for Pre-trained Robot Policy Enhancement</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">GUIDES: Guidance Using Instructor-Distilled Embeddings for Pre-trained Robot Policy Enhancement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="#">Minquan Gao</a><sup>1,2*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Xinyi Li</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Qing Yan</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="#">Xiaojian Sun</a><sup>2</sup>,</span>
+            <span class="author-block">
+              <a href="#">Xiaopan Zhang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="#">Chien-Ming Huang</a><sup>2‡</sup>,</span>
+            <span class="author-block">
+              <a href="#">Jiachen Li</a><sup>1‡</sup>
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal contribution</span><br>
+            <span class="author-block"><sup>‡</sup>Corresponding authors</span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>1</sup>University of California, Riverside. {xzhan006, jiachen.li}@ucr.edu</span><br>
+            <span class="author-block"><sup>2</sup>Johns Hopkins University. {mgao40, xli383, qyan13, xsun90}@jh.edu, cmhuang@cs.jhu.edu</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2511.03400.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2511.03400"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="./static/videos/AAAIDEMO.mp4"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/AAAIDEMO.mp4" type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">GUIDES</span> enhances pre-trained robot policies with semantic guidance from foundation models, 
+        enabling better task understanding and execution without requiring architectural redesign.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Organizations -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Organizations</h2>
+        <div class="content has-text-justified">
+          <p style="text-align: center;">
+            <a href="https://intuitivecomputing.github.io/" target="_blank" style="color: #3273dc; text-decoration: underline;">
+              Intuitive Computing Lab at Johns Hopkins University
+            </a>
+            <br>
+            Trustworthy Autonomous Systems Laboratory (TASL)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Pre-trained robot policies serve as the foundation of many validated robotic systems, which encapsulate extensive embodied knowledge. 
+            However, they often lack the semantic awareness characteristic of foundation models, and replacing them entirely is impractical in many 
+            situations due to high costs and the loss of accumulated knowledge.
+          </p>
+          <p>
+            To address this gap, we introduce <strong>GUIDES</strong>, a lightweight framework that augments pre-trained policies with semantic guidance 
+            from foundation models without requiring architectural redesign. GUIDES employs a fine-tuned vision-language model (Instructor) to generate 
+            contextual instructions, which are encoded by an auxiliary module into guidance embeddings. These embeddings are injected into the policy's 
+            latent space, allowing the legacy model to adapt to this new semantic input through brief, targeted fine-tuning.
+          </p>
+          <p>
+            For inference-time robustness, a large language model-based Reflector monitors the Instructor's confidence and, when confidence is low, 
+            initiates a reasoning loop that analyzes execution history, retrieves relevant examples, and augments the VLM's context to refine subsequent actions. 
+            Extensive validation in the RoboCasa simulation environment across diverse policy architectures shows consistent and substantial improvements 
+            in task success rates. Real-world deployment on a UR5 robot further demonstrates that GUIDES enhances motion precision for critical sub-tasks 
+            such as grasping.
+          </p>
+          <p>
+            Overall, GUIDES offers a practical and resource-efficient pathway to upgrade, rather than replace, validated robot policies.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <video controls width="100%">
+            <source src="./static/videos/AAAIDEMO.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Method Overview -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method Overview</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/teaser.png" alt="GUIDES framework overview" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); display: block; margin: 0 auto 20px auto;"/>
+          <p>
+            GUIDES consists of three main components: (1) <strong>Instructor</strong> - a fine-tuned vision-language model that generates contextual instructions 
+            based on visual observations, (2) <strong>Guidance Module</strong> - an auxiliary network that encodes instructions into guidance embeddings 
+            and injects them into the policy's latent space, and (3) <strong>Reflector</strong> - an LLM-based component that monitors confidence and 
+            refines actions through reasoning when needed.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Architecture -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Architecture</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/method.png" alt="GUIDES architecture and method overview" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); display: block; margin: 0 auto 20px auto;"/>
+          <p>
+            The GUIDES framework seamlessly integrates with existing pre-trained policies. The Instructor processes visual observations to generate 
+            natural language instructions, which are then encoded into guidance embeddings by the auxiliary module. These embeddings are injected 
+            into the policy's latent representation, enabling semantic-aware decision making while preserving the original policy's learned behaviors.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/main-results.png" alt="GUIDES experimental results" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); display: block; margin: 0 auto 20px auto;"/>
+          <p>
+            GUIDES demonstrates consistent improvements across diverse policy architectures in the RoboCasa simulation environment. 
+            The framework shows substantial gains in task success rates while maintaining computational efficiency. Results indicate 
+            that semantic guidance significantly enhances the policy's ability to understand and execute complex manipulation tasks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real-world Deployment -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Real-world Deployment</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/realworld-ood.png" alt="Real-world deployment results" style="max-width: 60%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); display: block; margin: 0 auto 20px auto;"/>
+          <p>
+            Real-world validation on a UR5 robot demonstrates GUIDES' practical applicability. The framework enhances motion precision 
+            for critical sub-tasks such as grasping, showing that the semantic guidance translates effectively from simulation to real-world scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Performance Analysis -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Performance Analysis</h2>
+        <div class="content has-text-justified">
+          <img src="./static/images/runtime_comparison.png" alt="Runtime performance comparison" style="max-width: 60%; height: auto; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); display: block; margin: 0 auto 20px auto;"/>
+          <p>
+            GUIDES maintains computational efficiency while providing semantic enhancement. The framework adds minimal overhead to the 
+            original policy execution, making it practical for real-time robotic applications. The lightweight design ensures that 
+            the benefits of semantic guidance come without significant computational costs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{gao2024guides,
+  title={GUIDES: Guidance Using Instructor-Distilled Embeddings for Pre-trained Robot Policy Enhancement},
+  author={Gao, Minquan and Li, Xinyi and Yan, Qing and Sun, Xiaojian and Zhang, Xiaopan and Huang, Chien-Ming and Li, Jiachen},
+  journal={arXiv preprint arXiv:2511.03400},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/pdf/2511.03400.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="#" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
